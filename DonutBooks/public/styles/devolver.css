@@ -35,16 +35,16 @@ nav {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 }
 
-nav img {
+/* nav img {
     animation: navLinkFade-top 1.5s;
-}
+} */
 
 nav span {
     margin-left: 9%;
 }
 
 nav ul {
-    animation: navLinkFade-top 1.5s;
+    /* animation: navLinkFade-top 1.5s; */
     margin-right: 9%;
 }
 
@@ -67,9 +67,10 @@ nav ul {
     color: white;
 }
 
-.menu a:hover {
+.menu img:hover {
     color: #deccea;
     opacity: 0.7;
+    transition: 0.3s;
 }
 
 .mobile-menu {
@@ -101,7 +102,50 @@ nav ul {
 }
 
 .sair a:hover {
-    color: rgb(224, 23, 60);
+    color: rgb(231, 100, 124);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.hovertext {
+    position: relative;
+}
+
+.hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    transition: opacity 0.5s ease-in-out;
+    background-color: white;
+    color: #8d00da;
+
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-55%);
+
+}
+
+.hovertext:hover:before {
+    opacity: 0.9;
+    visibility: visible;
 }
 
 @keyframes navLinkFade-back {
@@ -153,18 +197,18 @@ nav ul {
     background-color: #8d00da;
     color: white;
     font-size: 1rem;
-    transition: 0.7s;
-    animation: navLinkFade-back 1.5s;
+    transition: 0.3s;
+    /* animation: navLinkFade-back 1.5s; */
     border: 1px solid #8d00da;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.buttons a:hover {
-    background-color: #ffffff;
-    color: #03A63C !important;
-    border: 1px solid #03A63C;
-    scale: 1.1;
-    opacity: 0.7;
+.button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.button:active{
+    opacity: 0.1;
 }
 
 .historico {
@@ -179,13 +223,8 @@ table {
     margin-top: 25px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
-    animation: navLinkFade-back 1.5s;
-    transition: 1s;
+    /* animation: navLinkFade-back 1.5s; */
 }
-
-table:hover {
-    transform: scale(1.1);
-}	
 
 td {
     color: #454445;
@@ -201,10 +240,41 @@ th {
     font-weight: lighter;
 }
 
+.table button{
+    color: #8d00da;
+    background-color: white;
+    border: 1px solid #8d00da;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 0.3s;
+}
+
+.table button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.table button:active{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 .table {
     margin: 0 auto;
     width: 80%;
     border-collapse: collapse;
+}
+
+.table caption {
+    padding: 10px;
+    color: white;
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    background-color:  #8d00da;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid white;
 }
 
 /* FOOTER */
