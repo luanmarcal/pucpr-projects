@@ -12,9 +12,9 @@ import os
 '''
 FACES DOS DADOS DE ACORDO COM A SUA COR
 '''
-dado_verde = ["Cerebro", "Passos", "Cerebro","Tiro", "Passos", "Cerebro", "Verde"]
-dado_amarelo = ["Tiro", "Passos", "Cerebro","Tiro", "Passos", "Cerebro", "Amarelo"]
-dado_vermelho = ["Tiro", "Passos", "Tiro","Cerebro", "Passos", "Tiro", "Vermelho"]
+dado_verde = ("Cerebro", "Passos", "Cerebro","Tiro", "Passos", "Cerebro", "Verde")
+dado_amarelo = ("Tiro", "Passos", "Cerebro","Tiro", "Passos", "Cerebro", "Amarelo")
+dado_vermelho = ("Tiro", "Passos", "Tiro","Cerebro", "Passos", "Tiro", "Vermelho")
 tubo_dados = []
 '''
 VARIÁVEIS QUE SERÃO UTILIZADAS NO DESENVOLVIMENTO DO JOGO
